@@ -7,6 +7,7 @@ function setup()
     img = loadImage("bg.png");  
     img2 = loadImage("man.png");
     img3 = loadImage("star.png");
+    img4 = loadImage("bg2.png");
     count=0;
 }
 
@@ -25,6 +26,8 @@ function draw()
        count=0;
     }
 
+    background();
+
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
@@ -38,4 +41,8 @@ function draw()
 
 function drawstar(x,y){
     image(img3,x-img3.width/2,y-img3.height/2);
+}
+
+function background(x,y){
+	image(img4,x-img4.width/2,y-img4.height/2);
 }
