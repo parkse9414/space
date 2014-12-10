@@ -19,7 +19,7 @@ function draw()
     noFill();
     noStroke();
 
-    drawstar(count*3,725);
+    drawstar(count*0.3,725);
     count=count+1;
     if(count>1040){
        count=0;
