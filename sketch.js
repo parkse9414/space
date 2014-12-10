@@ -16,8 +16,9 @@ function draw()
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
-    image(img2,434 + Math.cos(timing*2*PI)*25+ Math.cos(timing*2*PI)*5,           // x좌표
-              944 + Math.sin(timing*2*PI)*25+ Math.cos(timing*2*PI)*5);           // y좌표
+    //남자
+    image(img2,365 + Math.cos(timing*2*PI)*25+ Math.cos(timing*2*PI)*5,           // x좌표
+    844 + Math.sin(timing*2*PI)*25+ Math.cos(timing*2*PI)*5);                     // y좌표
   
 }
 
