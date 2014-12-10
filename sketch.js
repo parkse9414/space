@@ -37,10 +37,9 @@ function draw()
     }else if(f===1){
         image(img4,0,0);
     }else if(f===1){
-    	var duration = 8500;
-        var timing = (new Date()%duration)/duration;
-    	image(img6,324 + Math.cos(timing*2*PI)*10,534 + Math.sin(timing*2*PI)*10); 
-    }
+    	image(img6,0,0);
+    } 
+
 
 
     var duration = 8000;
