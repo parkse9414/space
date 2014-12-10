@@ -73,5 +73,5 @@ function object(){
 	var duration = 8500;
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
-    image(img7, 10 + Math.cos(timing*2*PI)*8, 739 + Math.sin(timing*2*PI)*10); 
+    image(img7, 13 + Math.cos(timing*2*PI)*3, 739 + Math.sin(timing*2*PI)*5); 
 }
