@@ -16,6 +16,7 @@ function setup()
     img8 = loadImage("pot2.png");
     img9 = loadImage("potb.png");
     count=0;
+    count2=0;
 }
 
 
