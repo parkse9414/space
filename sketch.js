@@ -78,7 +78,7 @@ function object(){
 
     image(img9,107,count2+631);
     count2=count2+1;
-    if(count2>600){
+    if(count2>=600){
        count2=0;
     }  
 }
