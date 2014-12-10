@@ -17,8 +17,8 @@ function draw()
     var timing = (new Date()%duration)/duration;
 
     //남자
-    image(img2,365 + Math.cos(timing*2*PI)*5+ Math.cos(timing*2*PI)*5,           // x좌표
-    744 + Math.sin(timing*2*PI)*5+ Math.cos(timing*2*PI)*5);                     // y좌표
+    image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,           // x좌표
+    744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);                     // y좌표
   
 }
 
