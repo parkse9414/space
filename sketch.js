@@ -20,6 +20,12 @@ function draw()
     noFill();
     noStroke();
 
+    if(f === 0 ){
+        image(img,0,0);
+    }else if(f===1){
+        image(img4,0,0);
+    }
+
     drawstar(count*0.3,725);
     count=count+1;
     if(count>1040){
@@ -37,11 +43,12 @@ function draw()
 
 function mouseClicked(){
     if(f===0){
-        image(img,0,0);
+        f=1;
     }else if(f===1){
-        image(img4,0,0);
+        f=0;
     }
 }
+
 
 
 function drawstar(x,y){
