@@ -38,13 +38,13 @@ function draw()
         image(img4,0,0);
     }
 
-    var duration = 8500;
-    var timing = (new Date()%duration)/duration;
-    image(img6, 324 + Math.cos(timing*2*PI)*10, 534 + Math.sin(timing*2*PI)*10); 
 
+    drawpaper();
     
+
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
+
 
     //남자
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,           // x좌표
@@ -66,3 +66,8 @@ function drawstar(x,y){
 }
 
 
+function drawpaper(){
+	var duration = 8500;
+    var timing = (new Date()%duration)/duration;
+    image(img6, 324 + Math.cos(timing*2*PI)*10, 534 + Math.sin(timing*2*PI)*10); 
+}
