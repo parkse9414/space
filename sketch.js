@@ -27,7 +27,8 @@ function draw()
     }
 
 
-
+    background(0,0);
+    
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
