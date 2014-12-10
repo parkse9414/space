@@ -44,5 +44,5 @@ function drawstar(x,y){
 }
 
 function background(x,y){
-	image(img4,1,1);
+	image(img4,x-img4.width/2,y-img4.height/2);
 }
