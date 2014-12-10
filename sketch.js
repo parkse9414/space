@@ -43,8 +43,6 @@ function draw()
     }
 
 
-    object();
-
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
