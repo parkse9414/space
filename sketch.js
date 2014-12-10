@@ -2,7 +2,7 @@ var img;
 
 function setup()
 {
-    createCanvas(1040,1554);
+    createCanvas(1040,1450);
     img = loadImage("bg.png");  
     img2 = loadImage("man.png");
 }
@@ -18,7 +18,7 @@ function draw()
 
     //남자
     image(img2,365 + Math.cos(timing*2*PI)*5+ Math.cos(timing*2*PI)*5,           // x좌표
-    844 + Math.sin(timing*2*PI)*5+ Math.cos(timing*2*PI)*5);                     // y좌표
+    744 + Math.sin(timing*2*PI)*5+ Math.cos(timing*2*PI)*5);                     // y좌표
   
 }
 
