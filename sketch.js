@@ -13,14 +13,6 @@ function setup()
 }
 
 
-function mouseClicked(){
-    if(f===0){
-        f=1;
-    }else if(f===1){
-        f=0;
-    }
-}
-
 
 function draw()
 {
@@ -47,6 +39,15 @@ function draw()
         img4();
     }
 
+}
+
+
+function mouseClicked(){
+    if(f===0){
+        f=1;
+    }else if(f===1){
+        f=0;
+    }
 }
 
 
