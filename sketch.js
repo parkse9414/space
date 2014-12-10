@@ -1,5 +1,6 @@
 var img; 
 var count;
+var f = 0;
 
 function setup()
 {
@@ -12,6 +13,13 @@ function setup()
 }
 
 
+function mouseClicked(){
+    if(f===0){
+        f=1;
+    }else if(f===1){
+        f=0;
+    }
+}
 
 
 function draw()
@@ -26,7 +34,14 @@ function draw()
        count=0;
     }
 
-    image(img4,0,0);
+
+    if(f === 0 ){
+        img();
+    }else if(f===1){
+        img4();
+    }
+
+
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
