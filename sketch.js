@@ -76,7 +76,7 @@ function object(){
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
     image(img7, 30+ Math.cos(timing*2*PI)*7, 839 + Math.sin(timing*2*PI)*3); 
 
-    image(img9,137,count2+631);
+    image(img9,137,count2+651);
     count2=count2-1;
     if(count2>100){
        count2=0;
