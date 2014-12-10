@@ -27,9 +27,9 @@ function draw()
     744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);                     // y좌표
 
     drawstar(count,725);
-    coun=coun+1;
+    count=count+1;
     if(count>1040){
-        count=0;
+       count=0;
     }
 }
 
