@@ -9,6 +9,7 @@ function setup()
     img2 = loadImage("man.png");
     img3 = loadImage("star.png");
     img4 = loadImage("bg2.png");
+    img5 = loadImage("none.png");
     count=0;
 }
 
@@ -20,17 +21,20 @@ function draw()
     noFill();
     noStroke();
 
-    if(f === 0 ){
-        image(img,0,0);
-    }else if(f===1){
-        image(img4,0,0);
-    }
 
     drawstar(count*0.3,725);
     count=count+1;
     if(count>1040){
        count=0;
     }
+
+
+    if(f === 0 ){
+        image(img5,0,0);
+    }else if(f===1){
+        image(img4,0,0);
+    }
+
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
