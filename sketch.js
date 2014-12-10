@@ -2,7 +2,6 @@ var img;
 var count;
 var count2;
 var f = 0;
-var f2 = 0;
 
 function setup()
 {
@@ -40,18 +39,11 @@ function draw()
     if(f === 0 ){
         image(img5,0,0);
     }else if(f===1){
-        image(img4,0,0);
-    }
-
-
-    if(f2 === 0 ){
-        image(img5,0,0);
-    }else if(f2===1){
         object();
     }
 
 
-
+    object();
 
 
     var duration = 8000;
@@ -73,20 +65,14 @@ function mouseClicked(){
 }
 
 
-function mouseClicked2(){
-    if(f2===0){
-        f2=1;
-    }else if(f2===1){
-        f2=0;
-    }
-}
-
 function drawstar(x,y){
     image(img3,x-img3.width/2,y-img3.height/2);
 }
 
 
 function object(){
+	image(img4,0,0);
+
 	var duration = 8500;
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
