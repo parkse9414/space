@@ -37,9 +37,9 @@ function draw()
 
 function mouseClicked(){
     if(f===0){
-        image(img);
+        image(img,0,0);
     }else if(f===1){
-        image(img4);
+        image(img4,0,0);
     }
 }
 
