@@ -74,11 +74,11 @@ function object(){
 	var duration = 8500;
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
-    image(img7, 13 + Math.cos(timing*2*PI)*3, 739 + Math.sin(timing*2*PI)*5); 
+    image(img7, 13 + Math.cos(timing*2*PI)*7, 739 + Math.sin(timing*2*PI)*3); 
 
-    image(img9,107,count2+631);
+    image(img9,107,count2+30);
     count2=count2-1;
-    if(count2>620){
+    if(count2>631){
        count2=0;
     }  
 }
