@@ -30,7 +30,11 @@ function draw()
        count=0;
     }
 
-    object();
+
+    var duration = 8500;
+    var timing = (new Date()%duration)/duration;
+    image(img6, 424 + Math.cos(timing*2*PI)*10, 534 + Math.sin(timing*2*PI)*10);  
+
 
     if(f === 0 ){
         image(img5,0,0);
@@ -63,10 +67,3 @@ function drawstar(x,y){
 }
 
 
-function object(){
-    image(img6,424,count2+50);
-    count2=count2+1.5;
-     if(count2>534){
-    count2=0;
-    }  
-} 
