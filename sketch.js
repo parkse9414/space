@@ -12,6 +12,9 @@ function setup()
     img4 = loadImage("bg2.png");
     img5 = loadImage("none.png");
     img6 = loadImage("paper.png");
+    img7 = loadImage("pot.png");
+    img8 = loadImage("pot2.png");
+    img9 = loadImage("potb.png");
     count=0;
 }
 
@@ -70,4 +73,5 @@ function object(){
 	var duration = 8500;
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
+    image(img7, 10 + Math.cos(timing*2*PI)*8, 739 + Math.sin(timing*2*PI)*10); 
 }
