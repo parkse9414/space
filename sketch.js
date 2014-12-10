@@ -40,7 +40,7 @@ function draw()
 
 
     drawpaper();
-    
+
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
@@ -69,5 +69,5 @@ function drawstar(x,y){
 function drawpaper(){
 	var duration = 8500;
     var timing = (new Date()%duration)/duration;
-    image(img6, 324 + Math.cos(timing*2*PI)*10, 534 + Math.sin(timing*2*PI)*10); 
+    image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
 }
