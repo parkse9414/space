@@ -26,7 +26,7 @@ function draw()
        count=0;
     }
 
-    image(img4,1,1);
+    image(img4,0,0);
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
