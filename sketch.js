@@ -34,15 +34,6 @@ function draw()
        count=0;
     }
 
-
-    if(f === 0 ){
-        img();
-    }else if(f===1){
-        img4();
-    }
-
-
-
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
@@ -50,6 +41,11 @@ function draw()
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,           // x좌표
     744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);                     // y좌표
 
+    if(f === 0 ){
+        img();
+    }else if(f===1){
+        img4();
+    }
 
 }
 
