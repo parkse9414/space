@@ -30,6 +30,7 @@ function draw()
        count=0;
     }
 
+    object();
 
     if(f === 0 ){
         image(img5,0,0);
@@ -37,8 +38,8 @@ function draw()
         image(img4,0,0);
     }
 
-    object();
-    
+
+
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
