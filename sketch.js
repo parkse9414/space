@@ -19,6 +19,12 @@ function draw()
     noFill();
     noStroke();
 
+    drawstar(count*3,725);
+    count=count+1;
+    if(count>1040){
+       count=0;
+    }
+
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
@@ -26,11 +32,7 @@ function draw()
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,           // x좌표
     744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);                     // y좌표
 
-    drawstar(count,725);
-    count=count+1;
-    if(count>1040){
-       count=0;
-    }
+
 }
 
 
