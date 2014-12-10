@@ -1,5 +1,6 @@
 var img; 
 var count;
+var count2;
 var f = 0;
 
 function setup()
@@ -10,6 +11,7 @@ function setup()
     img3 = loadImage("star.png");
     img4 = loadImage("bg2.png");
     img5 = loadImage("none.png");
+    img6 = loadImage("paper.png");
     count=0;
 }
 
@@ -35,7 +37,8 @@ function draw()
         image(img4,0,0);
     }
 
-
+    object();
+    
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
 
@@ -54,8 +57,15 @@ function mouseClicked(){
 }
 
 
-
 function drawstar(x,y){
     image(img3,x-img3.width/2,y-img3.height/2);
 }
 
+
+function object(){
+    image(img6,424,count2+50);
+    count2=count2+1.5;
+     if(count2>534){
+    count2=0;
+    }  
+} 
