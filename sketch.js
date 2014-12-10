@@ -26,7 +26,7 @@ function draw()
        count=0;
     }
 
-    background(0,0);
+    background();
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
@@ -44,5 +44,5 @@ function drawstar(x,y){
 }
 
 function background(x,y){
-	image(img4,0,0);
+	image(img4,1,1);
 }
