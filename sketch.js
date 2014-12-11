@@ -108,6 +108,7 @@ function object(){
 
     image(img12,833,count4+975);
     count4=count4-1;
-    if(count4>500){
+    if(count4>50){
        count4=0;
+    }
 }
