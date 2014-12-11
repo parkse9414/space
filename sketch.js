@@ -82,7 +82,7 @@ function object(){
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
     image(img7, 40+ Math.cos(timing*2*PI)*7, 839 + Math.sin(timing*2*PI)*3); 
-    image(img8, 40+ Math.cos(timing*2*PI)*10, 745 + Math.sin(timing*2*PI)*3); 
+    image(img8, 40+ Math.cos(timing*2*PI)*3, 745 + Math.sin(timing*2*PI)*10); 
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
