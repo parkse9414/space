@@ -115,5 +115,5 @@ function object(){
 }
 
 function mouse(){
-    image(img16, mouseX - 62, mouseY - 62);
+    image(img16, 62, 62);
 }
