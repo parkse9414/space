@@ -25,6 +25,7 @@ function setup()
     img15 = loadImage("pan2.png");
     img16 = loadImage("earth.png");
     img17 = loadImage("moon.png");
+    img18 = loadImage("shadow.png");
     count=0;
     count2=0;
     count3=0;
@@ -44,7 +45,7 @@ function draw()
     count=count+1;
     if(count>1040){
        count=0;
-    }
+    }     
 
     
     if(f === 0 ){
@@ -53,7 +54,18 @@ function draw()
         object();
     }
 
+    var duration = 8000;
+    var timing = (new Date()%duration)/duration;
 
+    image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,         
+    744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);       
+
+    image(img16, mouseX - 32, mouseY - 32);  
+
+    var duration = 4500;
+    var timing = (new Date()%duration)/duration;
+    image(img17, mouseX + Math.cos(timing*4*PI)*50 - 7, 
+    mouseY + Math.sin(timing*4*PI)*50 - 7);  
 }
 
 
@@ -86,6 +98,12 @@ function object(){
     image(img13, 780+ Math.cos(timing*2*PI)*3, 998 + Math.sin(timing*2*PI)*15); 
     image(img14, 200+ Math.cos(timing*2*PI)*7, 1300 + Math.sin(timing*2*PI)*12); 
     image(img15, 230+ Math.cos(timing*2*PI)*1, 1000 + Math.sin(timing*2*PI)*7); 
+
+    var duration = 8000;
+    var timing = (new Date()%duration)/duration;
+
+    image(img18,465 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,         
+    880 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);   
 
     image(img9,140,count2+730);
     count2=count2-1;
