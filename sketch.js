@@ -84,9 +84,9 @@ function object(){
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
-    image(img10, 456 + Math.cos(timing*2*PI)*10, 864 + Math.sin(timing*2*PI)*10); 
-    image(img11, 523+ Math.cos(timing*2*PI)*7, 921 + Math.sin(timing*2*PI)*3); 
-    image(img12, 500+ Math.cos(timing*2*PI)*10, 998 + Math.sin(timing*2*PI)*3); 
+    image(img10, 656 + Math.cos(timing*2*PI)*10, 864 + Math.sin(timing*2*PI)*10); 
+    image(img11, 723+ Math.cos(timing*2*PI)*7, 921 + Math.sin(timing*2*PI)*3); 
+    image(img12, 700+ Math.cos(timing*2*PI)*10, 998 + Math.sin(timing*2*PI)*3); 
 
 
 
