@@ -1,5 +1,4 @@
 var img; 
-var img16;
 var count;
 var count2;
 var count3;
@@ -47,9 +46,8 @@ function draw()
        count=0;
     }
 
-
-    image(img16,62,62);
-
+    
+    mouse();
 
 
     if(f === 0 ){
@@ -114,4 +112,8 @@ function object(){
     if(count4>300){
        count4=0;
     }
+}
+
+function mouse(){
+    image(img16, mouseX - 62, mouseY - 62);
 }
