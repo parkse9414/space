@@ -106,7 +106,7 @@ function object(){
        count3=0;
     }  
 
-    image(img12,833,count4+975);
+    image(img12,833,(count4+975)*0.3);
     count4=count4-1;
     if(count4>300){
        count4=0;
