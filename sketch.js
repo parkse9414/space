@@ -23,8 +23,8 @@ function setup()
     img13 = loadImage("fish3.png");
     img14 = loadImage("pan.png");
     img15 = loadImage("pan2.png");
-    img16 = loadImage("earth.png");
-    img17 = loadImage("moon.png");
+    img16 = loadImage("planet.png");
+    img17 = loadImage("planet2.png");
     img18 = loadImage("shadow.png");
     count=0;
     count2=0;
@@ -60,12 +60,12 @@ function draw()
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,         
     744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);       
 
-    image(img16, mouseX - 32, mouseY - 32);  
+    image(img16, mouseX - 32, mouseY - 21);  
 
     var duration = 4500;
     var timing = (new Date()%duration)/duration;
-    image(img17, mouseX + Math.cos(timing*4*PI)*50 - 7, 
-    mouseY + Math.sin(timing*4*PI)*50 - 7);  
+    image(img17, mouseX + Math.cos(timing*4*PI)*50 - 9, 
+    mouseY + Math.sin(timing*4*PI)*50 - 9);  
 }
 
 
