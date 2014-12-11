@@ -15,6 +15,11 @@ function setup()
     img7 = loadImage("pot.png");
     img8 = loadImage("pot2.png");
     img9 = loadImage("potb.png");
+    img10 = loadImage("fish.png");
+    img11 = loadImage("fish2.png");
+    img12 = loadImage("fish3.png");
+    img13 = loadImage("pan.png");
+    img14 = loadImage("pan2.png");
     count=0;
     count2=0;
 }
@@ -75,7 +80,13 @@ function object(){
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
     image(img7, 40+ Math.cos(timing*2*PI)*7, 839 + Math.sin(timing*2*PI)*3); 
-    image(img8, 40+ Math.cos(timing*2*PI)*7, 745 + Math.sin(timing*2*PI)*3); 
+    image(img8, 40+ Math.cos(timing*2*PI)*10, 745 + Math.sin(timing*2*PI)*3); 
+
+    var duration = 8000;
+    var timing = (new Date()%duration)/duration;
+    image(img10, 453 + Math.cos(timing*2*PI)*10, 858 + Math.sin(timing*2*PI)*10); 
+    image(img11, 523+ Math.cos(timing*2*PI)*7, 921 + Math.sin(timing*2*PI)*3); 
+    image(img12, 951+ Math.cos(timing*2*PI)*10, 498 + Math.sin(timing*2*PI)*3); 
 
     image(img9,140,count2+730);
     count2=count2-1;
