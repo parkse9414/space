@@ -89,7 +89,7 @@ function object(){
     image(img10, 756 + Math.cos(timing*2*PI)*7, 864 + Math.sin(timing*2*PI)*15); 
     image(img12, 780+ Math.cos(timing*2*PI)*3, 998 + Math.sin(timing*2*PI)*15); 
     image(img13, 200+ Math.cos(timing*2*PI)*7, 1300 + Math.sin(timing*2*PI)*12); 
-    image(img14, 230+ Math.cos(timing*2*PI)*5, 1000 + Math.sin(timing*2*PI)*13); 
+    image(img14, 230+ Math.cos(timing*2*PI)*1, 1000 + Math.sin(timing*2*PI)*7); 
 
     image(img9,140,count2+730);
     count2=count2-1;
