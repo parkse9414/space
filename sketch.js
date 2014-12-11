@@ -1,6 +1,7 @@
 var img; 
 var count;
 var count2;
+var count3;
 var f = 0;
 
 function setup()
@@ -22,6 +23,7 @@ function setup()
     img14 = loadImage("pan2.png");
     count=0;
     count2=0;
+    count3=0;
 }
 
 
@@ -85,17 +87,19 @@ function object(){
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
     image(img10, 756 + Math.cos(timing*2*PI)*7, 864 + Math.sin(timing*2*PI)*15); 
-    image(img11, 823+ Math.cos(timing*2*PI)*2, 961 + Math.sin(timing*2*PI)*20); 
     image(img12, 780+ Math.cos(timing*2*PI)*3, 998 + Math.sin(timing*2*PI)*15); 
-    image(img13, 230+ Math.cos(timing*2*PI)*10, 1300 + Math.sin(timing*2*PI)*2); 
-    image(img14, 276+ Math.cos(timing*2*PI)*12, 1000 + Math.sin(timing*2*PI)*3); 
-
-
-
+    image(img13, 200+ Math.cos(timing*2*PI)*10, 1300 + Math.sin(timing*2*PI)*2); 
+    image(img14, 230+ Math.cos(timing*2*PI)*12, 1000 + Math.sin(timing*2*PI)*3); 
 
     image(img9,140,count2+730);
     count2=count2-1;
     if(count2>100){
        count2=0;
+    }  
+
+    image(img11,826,count2+961);
+    count3=count3-1;
+    if(count3>100){
+       count3=0;
     }  
 }
