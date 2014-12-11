@@ -45,13 +45,11 @@ function draw()
     }
 
 
-
     if(f === 0 ){
         image(img5,0,0);
     }else if(f===1){
         object();
     }
-
 
 
     var duration = 8000;
