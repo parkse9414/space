@@ -47,9 +47,6 @@ function draw()
     }
 
     
-    mouse();
-
-
     if(f === 0 ){
         image(img5,0,0);
     }else if(f===1){
@@ -61,7 +58,14 @@ function draw()
     var timing = (new Date()%duration)/duration;
 
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,         
-    744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);                   
+    744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);       
+
+    image(img16, 62, 62);
+
+    var duration = 4500;
+    var timing = (new Date()%duration)/duration;
+    image(img17, mouseX + Math.cos(timing*4*PI)*100 - 7, 
+          mouseY + Math.sin(timing*4*PI)*100 - 7)            
 }
 
 
@@ -112,8 +116,4 @@ function object(){
     if(count4>300){
        count4=0;
     }
-}
-
-function mouse(){
-    image(img16, 62, 62);
 }
