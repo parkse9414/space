@@ -84,11 +84,11 @@ function object(){
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
-    image(img10, 756 + Math.cos(timing*2*PI)*15, 864 + Math.sin(timing*2*PI)*7); 
-    image(img11, 823+ Math.cos(timing*2*PI)*20, 941 + Math.sin(timing*2*PI)*2); 
-    image(img12, 780+ Math.cos(timing*2*PI)*15, 998 + Math.sin(timing*2*PI)*3); 
-    image(img13, 276+ Math.cos(timing*2*PI)*10, 508 + Math.sin(timing*2*PI)*2); 
-    image(img14, 230+ Math.cos(timing*2*PI)*12, 801 + Math.sin(timing*2*PI)*3); 
+    image(img10, 756 + Math.cos(timing*2*PI)*7, 864 + Math.sin(timing*2*PI)*15); 
+    image(img11, 823+ Math.cos(timing*2*PI)*2, 941 + Math.sin(timing*2*PI)*20); 
+    image(img12, 780+ Math.cos(timing*2*PI)*3, 998 + Math.sin(timing*2*PI)*15); 
+    image(img13, 230+ Math.cos(timing*2*PI)*10, 801 + Math.sin(timing*2*PI)*2); 
+    image(img14, 276+ Math.cos(timing*2*PI)*12, 508 + Math.sin(timing*2*PI)*3); 
 
 
 
