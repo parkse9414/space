@@ -26,7 +26,7 @@ function setup()
     count=0;
     count2=0;
     count3=0;
-    count3=0;
+    count4=0;
 }
 
 
