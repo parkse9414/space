@@ -23,6 +23,8 @@ function setup()
     img13 = loadImage("fish3.png");
     img14 = loadImage("pan.png");
     img15 = loadImage("pan2.png");
+    img16 = loadImage("earth.png");
+    img17 = loadImage("moon.png");
     count=0;
     count2=0;
     count3=0;
@@ -59,6 +61,13 @@ function draw()
     //남자
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,           // x좌표
     744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);                     // y좌표
+
+    image(img16, mouseX - 62, mouseY - 62);
+
+    var duration = 4500;
+    var timing = (new Date()%duration)/duration;
+    image(img17, mouseX + Math.cos(timing*4*PI)*100 - 7, 
+          mouseY + Math.sin(timing*4*PI)*100 - 7)
 }
 
 
