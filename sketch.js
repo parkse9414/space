@@ -40,13 +40,11 @@ function draw()
     noFill();
     noStroke();
 
-
     drawstar(count*0.3,725);
     count=count+1;
     if(count>1040){
        count=0;
     }     
-
     
     if(f === 0 ){
         image(img5,0,0);
