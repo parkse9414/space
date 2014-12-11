@@ -4,7 +4,6 @@ var count2;
 var count3;
 var count4;
 var f = 0;
-var img16;
 
 function setup()
 {
@@ -66,7 +65,7 @@ function draw()
     var duration = 4500;
     var timing = (new Date()%duration)/duration;
     image(img17, mouseX + Math.cos(timing*4*PI)*100 - 7, 
-          mouseY + Math.sin(timing*4*PI)*100 - 7)            
+          mouseY + Math.sin(timing*4*PI)*100 - 7);         
 }
 
 
