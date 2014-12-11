@@ -84,9 +84,11 @@ function object(){
 
     var duration = 8000;
     var timing = (new Date()%duration)/duration;
-    image(img10, 453 + Math.cos(timing*2*PI)*10, 858 + Math.sin(timing*2*PI)*10); 
+    image(img10, 456 + Math.cos(timing*2*PI)*10, 864 + Math.sin(timing*2*PI)*10); 
     image(img11, 523+ Math.cos(timing*2*PI)*7, 921 + Math.sin(timing*2*PI)*3); 
-    image(img12, 951+ Math.cos(timing*2*PI)*10, 498 + Math.sin(timing*2*PI)*3); 
+    image(img12, 500+ Math.cos(timing*2*PI)*10, 998 + Math.sin(timing*2*PI)*3); 
+
+
 
     image(img9,140,count2+730);
     count2=count2-1;
