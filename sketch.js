@@ -74,10 +74,10 @@ function object(){
 	var duration = 8500;
     var timing = (new Date()%duration)/duration;
     image(img6, 324 + Math.cos(timing*2*PI)*10, 544 + Math.sin(timing*2*PI)*10); 
-    image(img7, 30+ Math.cos(timing*2*PI)*7, 839 + Math.sin(timing*2*PI)*3); 
-    image(img8, 30+ Math.cos(timing*2*PI)*7, 739 + Math.sin(timing*2*PI)*3); 
+    image(img7, 40+ Math.cos(timing*2*PI)*7, 839 + Math.sin(timing*2*PI)*3); 
+    image(img8, 40+ Math.cos(timing*2*PI)*7, 745 + Math.sin(timing*2*PI)*3); 
 
-    image(img9,130,count2+730);
+    image(img9,140,count2+730);
     count2=count2-1;
     if(count2>100){
        count2=0;
