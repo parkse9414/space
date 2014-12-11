@@ -1,4 +1,5 @@
 var img; 
+var img16;
 var count;
 var count2;
 var count3;
