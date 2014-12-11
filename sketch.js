@@ -60,7 +60,7 @@ function draw()
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,         
     744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);       
 
-    image(img16, mouseX, mouseY);     
+    image(img6, mouseX + 62, mouseY + 62);     
 }
 
 
