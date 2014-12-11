@@ -47,12 +47,8 @@ function draw()
     }
 
 
-    image(img16, mouseX - 62, mouseY - 62);
+    image(img16,62,62);
 
-    var duration = 4500;
-    var timing = (new Date()%duration)/duration;
-    image(img17, mouseX + Math.cos(timing*4*PI)*100 - 7, 
-          mouseY + Math.sin(timing*4*PI)*100 - 7)
 
 
     if(f === 0 ){
