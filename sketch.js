@@ -58,7 +58,7 @@ function draw()
     var timing = (new Date()%duration)/duration;
 
     image(img2,365 + Math.cos(timing*2*PI)*15+ Math.cos(timing*2*PI)*5,         
-    744 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);       
+    700 + Math.sin(timing*2*PI)*15+ Math.cos(timing*2*PI)*5);       
 
     image(img16, mouseX - 32, mouseY - 21);  
 
